@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SkillLoop 技能互换平台，让每个人都能用擅长的技能换到想学的技能。" />
+    <title>SkillLoop · 技能互换平台</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="SkillLoop 首页">
+        <span class="brand-mark">↗</span>
+        <span>Skill<span>Loop</span></span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#discover">发现伙伴</a>
+        <a href="#how">怎么玩</a>
+        <a href="#stories">真实故事</a>
+      </nav>
+      <button class="button button-dark button-small" data-open-post>发布我的技能 <span>＋</span></button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>让技能流动起来</div>
+          <h1>用你会的，<br /><em>换你想学的。</em></h1>
+          <p>SkillLoop 让技能交换变得简单、真实、有趣。<br />不花高价报班，也能遇见愿意和你一起成长的人。</p>
+          <div class="hero-actions">
+            <a class="button button-accent" href="#discover">开始找伙伴 <span>→</span></a>
+            <button class="text-button" data-open-post>我也想分享技能 <span>＋</span></button>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>林</span><span>Y</span><span>小</span><span>+</span>
+            </div>
+            <span>已有 <strong>2,846</strong> 位学习者在这里交换成长</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="技能交换示意">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="floating-card card-top">
+            <span class="card-icon coral">♫</span>
+            <span><strong>吉他入门</strong><small>我能教</small></span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <div class="swap-circle">
+            <span class="swap-plus">+</span>
+            <span class="swap-label">技能<br />交换</span>
+          </div>
+          <div class="floating-card card-bottom">
+            <span class="card-icon yellow">✦</span>
+            <span><strong>手机摄影</strong><small>我想学</small></span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <span class="spark spark-a">✦</span><span class="spark spark-b">✦</span>
+        </div>
+      </section>
+
+      <section class="section discover-section" id="discover">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span>发现你的同频伙伴</div>
+            <h2>今天，想和谁交换？</h2>
+          </div>
+          <p>每一次匹配，都是一次新的连接。<br />输入你想学的技能，看看谁正好能教。</p>
+        </div>
+        <div class="search-panel">
+          <div class="search-main">
+            <span class="search-icon">⌕</span>
+            <input id="skill-search" placeholder="搜索你想学的技能，例如：Python、摄影、英语..." />
+            <button class="button button-dark" id="search-btn">找匹配 <span>→</span></button>
+          </div>
+          <div class="quick-tags">
+            <span>热门搜索</span>
+            <button data-tag="Python">Python</button><button data-tag="摄影">摄影</button><button data-tag="英语口语">英语口语</button><button data-tag="吉他">吉他</button><button data-tag="剪辑">视频剪辑</button>
+          </div>
+        </div>
+        <div class="results-bar">
+          <strong id="result-title">为你推荐的伙伴</strong>
+          <span id="result-count">共 6 位</span>
+          <select id="sort-select" aria-label="排序方式"><option value="match">匹配度最高</option><option value="near">距离最近</option></select>
+        </div>
+        <div class="profile-grid" id="profile-grid"></div>
+      </section>
+
+      <section class="section how-section" id="how">
+        <div class="section-heading centered">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span>三步开始交换</div>
+            <h2>把“想学”变成“学会”</h2>
+          </div>
+          <p>没有复杂门槛，也没有单向输出。<br />每个人都可以是老师，也可以是学生。</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-number">01</span><div class="step-icon">✎</div><h3>写下你的技能</h3><p>发布你擅长的，和你一直想学的，系统会自动帮你找交集。</p></article>
+          <article class="step"><span class="step-number">02</span><div class="step-icon">⌕</div><h3>遇见合适的人</h3><p>根据技能、时间和距离，找到匹配度最高的交换伙伴。</p></article>
+          <article class="step"><span class="step-number">03</span><div class="step-icon">↗</div><h3>发起一次交换</h3><p>约一场线上或线下的学习，把彼此的知识变成真实的成长。</p></article>
+        </div>
+      </section>
+
+      <section class="section story-section" id="stories">
+        <div class="quote-mark">“</div>
+        <blockquote>我教她做作品集，她教我用相机记录生活。<br /><em>原来学习，不一定要一个人买单。</em></blockquote>
+        <div class="story-person"><span class="person-avatar">乔</span><span><strong>乔安 & 小满</strong><small>设计师 × 摄影爱好者 · 上海</small></span></div>
+      </section>
+    </main>
+
+    <footer><span>© 2025 SkillLoop</span><span>让每个人的技能，都有回响。</span><span>Made for curious people ✦</span></footer>
+
+    <div class="modal-backdrop" id="post-modal" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" data-close-post aria-label="关闭">×</button>
+        <div class="eyebrow"><span class="eyebrow-dot"></span>创建你的技能名片</div>
+        <h2 id="modal-title">让别人知道，<br /><em>你能带来什么。</em></h2>
+        <p>先填写一个简单的技能名片，匹配会从这里开始。</p>
+        <form id="post-form">
+          <label>你的昵称<input required name="name" placeholder="例如：小林" /></label>
+          <label>我能教<input required name="teach" placeholder="例如：尤克里里、做饭、Excel..." /></label>
+          <label>我想学<input required name="learn" placeholder="例如：日语、街舞、产品设计..." /></label>
+          <button class="button button-accent full-width" type="submit">发布技能名片 <span>→</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
